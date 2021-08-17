@@ -1,0 +1,32 @@
+{
+  "promo1": {
+    "description": "Item discount based on timeframe",
+    "name": "GIUYGIIU",
+    "discount": "35%",
+    "message": "Test - Discount based on Time frame"
+  },
+  "promo2": {
+    "description": "Order Level Promo for E2E TC15",
+    "name": "IUYGIUYG",
+    "discount": "5%",
+    "message": "Test"
+  },
+  "promo3": {
+    "description": "Order Level Promo for E2E TC9",
+    "name": "IUYGIUY",
+    "discount": "$5",
+    "message": "Test"
+  },
+  "promo4": {
+    "description": "Item Level Promo for E2E TC9",
+    "name": "TYTIUY",
+    "message": "Test - Employee 25% off",
+    "discount": "25%"
+  },
+  "promo5": {
+    "description": "Item level Promotion- 5$ Off",
+    "name": "IUYGIUYG",
+    "discount": "$5",
+    "message": "Test"
+  }
+}

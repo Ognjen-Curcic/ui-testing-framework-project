@@ -1,0 +1,82 @@
+{
+  "e2e_regularTC1_MX": {
+    "description": "Aerie",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027826766",
+    "name": "AEO Neon Headband",
+    "listPrice": "299.00",
+    "color": "TRUE BLACK",
+    "size": "One Size",
+    "style": "8147",
+    "price": "257.76"
+  },
+  "GD_regPrd0": {
+    "description": "Aerie",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027225066",
+    "name": "Aerie Shine Cheeky + XO Lace",
+    "listPrice": "$12.50",
+    "color": "TRUE BLACK",
+    "size": "M",
+    "style": "6304",
+    "price": "$12.50"
+  },
+  "GD_regPrd1": {
+    "description": "Bra",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027797666",
+    "name": "Real Me Full Coverage Lightly Lined Bra",
+    "listPrice": "$33.16",
+    "color": "GLACIER GRAY",
+    "size": "40C",
+    "style": "7797",
+    "price": "$39.95"
+  },
+  "GD_regPrd2": {
+    "description": "Dress",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027883666",
+    "name": "AE Knit Shift Dress",
+    "price": "$34.95",
+    "color": "BLUE",
+    "size": "S",
+    "style": "1399-2777",
+    "listPrice": "$34.95"
+  },
+  "GD_regPrd3": {
+    "description": "Cheap golden data product",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027485266",
+    "name": "Aerie Gauze Twist Headband",
+    "price": "$9.71",
+    "listPrice": "$9.71"
+  },
+  "GD_Product_with_Swappable_Availability_1": {
+    "description": "sku 1 from product with swapable availability",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027366466",
+    "name": "Mukluks Pennley Slipper",
+    "price": "$44.00"
+  },
+  "GD_Product_with_Swappable_Availability_2": {
+    "description": "sku 2 from product with swapable availability",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027366466",
+    "name": "Mukluks Pennley Slipper",
+    "price": "$44.00"
+  },
+  "GD_Product_with_Swappable_Availability_3": {
+    "description": "sku 3 from product with swapable availability",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027366466",
+    "name": "Mukluks Pennley Slipper",
+    "price": "$44.00"
+  },
+  "GD_Product_with_Swappable_Availability_4": {
+    "description": "sku 4 from product with swapable availability",
+    "productId": "1111_2323_456",
+    "catalogRefId": "0027366466",
+    "name": "Mukluks Pennley Slipper",
+    "price": "$44.00"
+  }
+}
