@@ -2,7 +2,7 @@
 
 ## What is testing framework
 
-Testing Framework is a layer of abstraction that wraps in convenient user friendly way various libraries - dependencies to provide convenient way of implementing and maintaining test cases.
+Testing Framework is a layer of abstraction that wraps in convenient user-friendly way various libraries - dependencies to provide convenient way of implementing and maintaining test cases.
 
 Web UI Testing framework needs to have:
 

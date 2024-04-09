@@ -2,7 +2,7 @@
 
 Hi Team, in first part of this internship you will work on some basic programming problems.
 
-Yor assignments are present in introAssignmets and dataManipulation folders in root of this project.
+Yor assignments are present in introAssignments and dataManipulation folders in root of this project.
 
 For every solution create new java class with name of your Assignment (Path is `src.main.java.introAssignments` or `src.main.java.dataManipulation`) - e.g. Assignment1.class - here you should implement task methods.
 
