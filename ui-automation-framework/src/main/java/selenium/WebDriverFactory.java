@@ -1,6 +1,5 @@
 package selenium;
 import config.RunConfiguration;
-import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Dimension;
@@ -15,7 +14,7 @@ public class WebDriverFactory {
     RunConfiguration runConfiguration = ConfigFactory.create(RunConfiguration.class);
 
     private void createChromeDriver() {
-        System.setProperty("webdriver.chrome.driver", "/Users/ocurcic/Downloads/chromedriver-mac-x64/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/ocurcic/Documents/chromedriver-mac-x64/chromedriver");
         driver = new ChromeDriver();
         setBrowserSize();
     }
