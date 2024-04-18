@@ -9,22 +9,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverFactory {
 
-    private WebDriver driver;
+    public static WebDriver driver;
 
-    RunConfiguration runConfiguration = ConfigFactory.create(RunConfiguration.class);
+    static RunConfiguration runConfiguration = ConfigFactory.create(RunConfiguration.class);
 
-    private void createChromeDriver() {
+    private static void createChromeDriver() {
         System.setProperty("webdriver.chrome.driver", "/Users/ocurcic/Documents/chromedriver-mac-x64/chromedriver");
         driver = new ChromeDriver();
         setBrowserSize();
     }
 
-    private void createFirefoxDriver() {
+    private static void createFirefoxDriver() {
         FirefoxDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
         setBrowserSize();
     }
-    public void initialize(){
+    public static void initialize(){
 
         switch (runConfiguration.browserName()){
             case "Google Chrome":
@@ -38,18 +38,19 @@ public class WebDriverFactory {
                 createChromeDriver();
         }
     }
-    public void end(){
+    public static void end(){
         driver.quit();
     }
     public WebDriver get(){
         return driver;
     }
 
-    private void setBrowserSize() {
+    private static void setBrowserSize() {
         int width = runConfiguration.browserWidth();
         int height = runConfiguration.browserHeight();
         driver.manage().window().setSize(new Dimension(width, height));
     }
+
 
 
 }

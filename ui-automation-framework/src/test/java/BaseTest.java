@@ -11,7 +11,7 @@ public class BaseTest {
 
     @BeforeAll
     static void setupAll() {
-        factory.initialize();
+        WebDriverFactory.initialize();
     }
 
     @BeforeEach

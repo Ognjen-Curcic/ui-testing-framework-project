@@ -16,5 +16,7 @@ public interface RunConfiguration extends Config {
     int browserHeight();
     @Key("selenium.version")
     String seleniumVersion();
+    @Key("timeout")
+    String timeout();
 
 }
