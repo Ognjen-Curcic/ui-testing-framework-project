@@ -2,11 +2,7 @@ package steps;
 
 import htmlelements.MyPageFactory;
 import htmlelements.MyPageFactoryProvider;
-import htmlelements.pages.SearchResultsPage;
 import htmlelements.pages.SearchSidebar;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import selenium.WebDriverFactory;
 
 public class SearchSteps {
 

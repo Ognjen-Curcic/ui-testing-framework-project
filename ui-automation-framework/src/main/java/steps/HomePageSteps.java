@@ -23,5 +23,10 @@ public class HomePageSteps {
         return new SearchSteps();
     }
 
+    public LoginSteps clickOnAccountIcon() {
+        homePage().accountIcon().click();
+        return new LoginSteps();
+    }
+
 
 }

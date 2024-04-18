@@ -23,4 +23,5 @@ public interface HomePage extends ExtendedWebPage {
     @FindBy("//li[contains(@class, 'search')]")
     ExtendedMyWebElement searchIcon();
 
+
 }
