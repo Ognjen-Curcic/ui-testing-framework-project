@@ -16,7 +16,7 @@ public class CreateAccountTest {
         new OpenPageSteps()
                 .openHomePage()
                 .acceptPrivacyModal()
-                .clickOnAccountIcon()
+                .clickOnAccountIconForCreateAccount()
                 .clickCreateAccountButtonInAccountSidebar()
                 .fillCreateAccountForm("Ognjen", "GD", "GridDynamics22", "GridDynamics22", "10017", "January", "24")
                 .clickCreateAccountButtonInCreateAccountPage();

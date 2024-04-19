@@ -23,10 +23,14 @@ public class HomePageSteps {
         return new SearchSteps();
     }
 
-    public CreateAccountPageSteps clickOnAccountIcon() {
+    public LoginSteps clickOnAccountIconForLogin() {
+        homePage().accountIcon().click();
+        return new LoginSteps();
+    }
+
+    public CreateAccountPageSteps clickOnAccountIconForCreateAccount() {
         homePage().accountIcon().click();
         return new CreateAccountPageSteps();
     }
-
 
 }
