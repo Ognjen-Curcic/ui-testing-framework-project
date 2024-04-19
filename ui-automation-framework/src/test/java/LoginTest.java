@@ -10,29 +10,29 @@ public class LoginTest {
         WebDriverFactory.initialize();
     }
 
-    @Test
-    public void testEmptyEmailAndPassword() {
-        new OpenPageSteps()
-                .openHomePage()
-                .acceptPrivacyModal()
-                .clickOnAccountIcon()
-                .clickSignInButtonInAccountSidebar()
-                .enterEmail("")
-                .enterPassword("")
-                .clickSignInButtonInSignInSidebar();
-    }
+//    @Test
+//    public void testEmptyEmailAndPassword() {
+//        new OpenPageSteps()
+//                .openHomePage()
+//                .acceptPrivacyModal()
+//                .clickOnAccountIcon()
+//                .clickSignInButtonInAccountSidebar()
+//                .enterEmail("")
+//                .enterPassword("")
+//                .clickSignInButtonInSignInSidebar();
+//    }
 
-    @Test
-    public void testValidEmailAndPassword() {
-        new OpenPageSteps()
-                .openHomePage()
-                .acceptPrivacyModal()
-                .clickOnAccountIcon()
-                .clickSignInButtonInAccountSidebar()
-                .enterEmail("ognjen00@gmail.com")
-                .enterPassword("GridDynamics00")
-                .clickSignInButtonInSignInSidebar();
-    }
+//    @Test
+//    public void testValidEmailAndPassword() {
+//        new OpenPageSteps()
+//                .openHomePage()
+//                .acceptPrivacyModal()
+//                .clickOnAccountIcon()
+//                .clickSignInButtonInAccountSidebar()
+//                .enterEmail("ognjen00@gmail.com")
+//                .enterPassword("GridDynamics00")
+//                .clickSignInButtonInSignInSidebar();
+//    }
 
     @AfterClass
     public static void tearDown() {

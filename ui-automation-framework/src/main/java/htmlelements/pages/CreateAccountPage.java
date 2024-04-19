@@ -1,13 +1,14 @@
 package htmlelements.pages;
 
 import htmlelements.ExtendedMyWebElement;
+import htmlelements.ExtendedWebPage;
 import io.qameta.htmlelements.annotation.Description;
 import io.qameta.htmlelements.annotation.FindBy;
 
-public interface CreateAccountPage {
+public interface CreateAccountPage extends ExtendedWebPage {
 
     @Description("Email input field")
-    @FindBy("//input[contains(@class,'form-input-login autofill-detect')]")
+    @FindBy("//input[@autocomplete = 'email']")
     ExtendedMyWebElement emailInputField();
 
     @Description("First Name field")
@@ -19,11 +20,11 @@ public interface CreateAccountPage {
     ExtendedMyWebElement lastNameField();
 
     @Description("Password field")
-    @FindBy("//input[contains(@class, 'form-input-password autofill-detect')]")
+    @FindBy("//input[@placeholder='Password']")
     ExtendedMyWebElement passwordField();
 
     @Description("Confirm password field")
-    @FindBy("//input[contains(@class,'confirm-password autofill-detect')]")
+    @FindBy("//input[@placeholder='Confirm Password']")
     ExtendedMyWebElement confirmPasswordField();
 
     @Description("Zip Code field")
@@ -32,11 +33,11 @@ public interface CreateAccountPage {
 
     @Description("Month Select field")
     @FindBy("//select[@aria-label='Month']")
-    ExtendedMyWebElement monthSelectField();
+    ExtendedMyWebElement monthDropdown();
 
     @Description("Day Select field")
     @FindBy("//select[@aria-label='Day']")
-    ExtendedMyWebElement daySelectField();
+    ExtendedMyWebElement dayDropdown();
 
     @Description("Terms and Conditions Button")
     @FindBy("//label[@class='aeo-checkbox-label clickable']")

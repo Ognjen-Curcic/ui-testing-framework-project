@@ -23,9 +23,9 @@ public class HomePageSteps {
         return new SearchSteps();
     }
 
-    public LoginSteps clickOnAccountIcon() {
+    public CreateAccountPageSteps clickOnAccountIcon() {
         homePage().accountIcon().click();
-        return new LoginSteps();
+        return new CreateAccountPageSteps();
     }
 
 

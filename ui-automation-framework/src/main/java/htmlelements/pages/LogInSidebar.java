@@ -5,7 +5,7 @@ import htmlelements.ExtendedWebPage;
 import io.qameta.htmlelements.annotation.Description;
 import io.qameta.htmlelements.annotation.FindBy;
 
-public interface SignInSidebar extends ExtendedWebPage {
+public interface LogInSidebar extends ExtendedWebPage {
 
     @Description("Email input field")
     @FindBy("//input[contains(@class, 'form-input-username')]")

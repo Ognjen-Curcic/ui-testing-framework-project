@@ -3,7 +3,7 @@ package steps;
 import htmlelements.MyPageFactory;
 import htmlelements.MyPageFactoryProvider;
 import htmlelements.pages.AccountSidebar;
-import htmlelements.pages.SignInSidebar;
+import htmlelements.pages.LogInSidebar;
 
 public class LoginSteps {
 
@@ -13,27 +13,26 @@ public class LoginSteps {
         return PAGE_FACTORY.on(AccountSidebar.class);
     }
 
-    private SignInSidebar signInSidebar() {
-        return PAGE_FACTORY.on(SignInSidebar.class);
+    private LogInSidebar logInSidebar() {
+        return PAGE_FACTORY.on(LogInSidebar.class);
     }
 
     public LoginSteps clickSignInButtonInAccountSidebar() {
-        accountSidebar().signInButton().click();
+        accountSidebar().signInButtonInAccountSidebar().click();
         return new LoginSteps();
     }
 
     public LoginSteps enterEmail(String email) {
-        signInSidebar().emailInputField().sendKeys(email);
+        logInSidebar().emailInputField().sendKeys(email);
         return new LoginSteps();
     }
 
     public LoginSteps enterPassword(String password) {
-        signInSidebar().passwordInputField().sendKeys(password);
+        logInSidebar().passwordInputField().sendKeys(password);
         return new LoginSteps();
     }
 
-    public LoginSteps clickSignInButtonInSignInSidebar() {
-        signInSidebar().signInButton().click();
-        return new LoginSteps();
+    public void clickSignInButtonInSignInSidebar() {
+        logInSidebar().signInButton().click();
     }
 }
