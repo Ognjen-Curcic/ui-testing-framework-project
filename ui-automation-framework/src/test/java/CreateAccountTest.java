@@ -1,14 +1,14 @@
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import selenium.WebDriverFactory;
 import steps.OpenPageSteps;
 
-public class CreateAccountTest {
+public class CreateAccountTest extends BaseTest {
 
-    @BeforeClass
+    @BeforeAll
     public static void setUp() {
-        WebDriverFactory.initialize();
+        BaseTest.setupAll();
     }
 
     @Test
@@ -22,8 +22,8 @@ public class CreateAccountTest {
                 .clickCreateAccountButtonInCreateAccountPage();
     }
 
-    @AfterClass
-    public static void tearDown() {
+    @AfterEach
+    public void tearDown() {
         WebDriverFactory.driver.quit();
     }
 

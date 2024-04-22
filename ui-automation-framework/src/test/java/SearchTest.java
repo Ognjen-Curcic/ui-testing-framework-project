@@ -1,13 +1,13 @@
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import selenium.WebDriverFactory;
 import steps.OpenPageSteps;
 
-public class SearchTest {
-    @BeforeClass
+public class SearchTest extends BaseTest{
+    @BeforeAll
     public static void setUp() {
-        WebDriverFactory.initialize();
+        BaseTest.setupAll();
     }
 
     @Test
@@ -21,8 +21,8 @@ public class SearchTest {
                 .verifyNumberOfDisplayedProducts(1);
     }
 
-    @AfterClass
-    public static void tearDown() {
+    @AfterEach
+    public void tearDown() {
         WebDriverFactory.driver.quit();
     }
 
