@@ -1,14 +1,7 @@
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import selenium.WebDriverFactory;
 import steps.OpenPageSteps;
 
-public class LoginTest extends BaseTest{
-    @BeforeAll
-    public static void setUp() {
-        BaseTest.setupAll();
-    }
+public class LoginTest extends BaseTest {
 
     @Test
     public void testEmptyEmailAndPassword() {
@@ -34,9 +27,5 @@ public class LoginTest extends BaseTest{
                 .clickSignInButtonInSignInSidebar();
     }
 
-    @AfterEach
-    public void tearDown() {
-        WebDriverFactory.driver.quit();
-    }
 
 }

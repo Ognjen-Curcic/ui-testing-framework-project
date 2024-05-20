@@ -40,11 +40,11 @@ public interface CreateAccountPage extends ExtendedWebPage {
     ExtendedMyWebElement dayDropdown();
 
     @Description("Terms and Conditions Button")
-    @FindBy("//label[@class='aeo-checkbox-label clickable']")
+    @FindBy("//div[@data-test-checkbox='acceptTerms']")
     ExtendedMyWebElement termsAndConditionsButton();
 
     @Description("Create Account button")
-    @FindBy("//button[contains(@class, 'qa-btn-register  btn-block')]")
+    @FindBy("//button[@data-test-btn='register']")
     ExtendedMyWebElement createAccountButtonInCreateAccountPage();
 
 }

@@ -12,7 +12,7 @@ public interface AccountSidebar extends ExtendedWebPage {
     ExtendedMyWebElement signInButtonInAccountSidebar();
 
     @Description("Create an account button")
-    @FindBy("//a[contains(@class,'qa-btn-register')]")
+    @FindBy("//a[contains(@class, 'btn-secondary qa-btn-register')]")
     ExtendedMyWebElement createAccountButtonInAccountSidebar();
 
 }

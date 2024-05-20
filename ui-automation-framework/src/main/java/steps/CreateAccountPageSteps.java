@@ -25,7 +25,7 @@ public class CreateAccountPageSteps {
         return new CreateAccountPageSteps();
     }
 
-    public CreateAccountPageSteps fillCreateAccountForm(String firstName, String lastName, String password, String confirmPassword, String zipCode, String month, String day) throws InterruptedException {
+    public CreateAccountPageSteps fillCreateAccountForm(String firstName, String lastName, String password, String confirmPassword, String zipCode, String month, String day) {
 
         // Here I am making a randomEmail
         String randomEmail = RandomUtils.generateRandomEmail("mail.com");
@@ -44,15 +44,18 @@ public class CreateAccountPageSteps {
         return new CreateAccountPageSteps();
     }
 
-    public void clickCreateAccountButtonInCreateAccountPage() {
-        createAccountPage().createAccountButtonInCreateAccountPage().click();
-    }
-
     public void selectMonthAndDay(String month, String day) {
         Select monthDropdown = new Select(createAccountPage().monthDropdown());
         monthDropdown.selectByVisibleText(month);
         Select dayDropdown = new Select(createAccountPage().dayDropdown());
         dayDropdown.selectByVisibleText(day);
     }
+
+    public LogOutSteps clickCreateAccountButtonInCreateAccountPage() {
+        createAccountPage().createAccountButtonInCreateAccountPage().click();
+        return new LogOutSteps();
+    }
+
+
 
 }

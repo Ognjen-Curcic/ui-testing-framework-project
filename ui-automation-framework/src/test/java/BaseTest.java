@@ -1,5 +1,3 @@
-
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import selenium.WebDriverFactory;
@@ -19,9 +17,9 @@ public class BaseTest {
         driver = factory.get();
     }
 
-    @AfterEach
-    public void tearDown() {
-        driver.quit();
-    }
+//    @AfterAll
+//    public static void tearDown() {
+//        WebDriverFactory.end();
+//    }
 
 }

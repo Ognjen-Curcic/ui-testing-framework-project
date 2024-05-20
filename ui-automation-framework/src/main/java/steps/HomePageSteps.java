@@ -33,4 +33,9 @@ public class HomePageSteps {
         return new CreateAccountPageSteps();
     }
 
+    public LogOutSteps clickOnAccountIconForLogOut() {
+        homePage().accountIcon().click();
+        return new LogOutSteps();
+    }
+
 }
